@@ -20,7 +20,7 @@ Our game counts all your won battles and saves them in the browser's memory.
 
 ## How to start playing? 
 - _**Download code:**_
-  - Clone this repository to your local computer - git clone https://github.com/David-Mastalski/Rock-Paper-Scissors-Game.git'
+  - Clone this repository to your local computer - git clone https://github.com/David-Mastalski/Rock-Paper-Scissors-Game.git
 - Navigate to the game directory and open the index.html file in a browser
 - Goodluck 😉
 
