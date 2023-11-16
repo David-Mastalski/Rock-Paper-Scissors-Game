@@ -7,6 +7,6 @@
 Welcome to the rock-paper-scissors game! This is a simple game where your goal is to defeat the computer by choosing one of the three options: rock, paper, or scissors.
 
 ## Rules of Memory Game
-  -Rock defeats scissors
-  -Scissors defeat paper
-  -Paper defeats rock
+- _**Rock defeats scissors**_
+- _**Scissors defeat paper**_
+- _**Paper defeats rock**_
