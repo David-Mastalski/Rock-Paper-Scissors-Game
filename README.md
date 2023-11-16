@@ -23,4 +23,5 @@ Our game counts all your won battles and saves them in the browser's memory.
 ## Demo from Memory Game
 <img align="left" src="https://github.com/David-Mastalski/Rock-Paper-Scissors-Game/blob/main/demo/video1.gif" alt="Rock-Paper-Scissors-Game Demo" width="50%">
 <img align="right" src="https://github.com/David-Mastalski/Rock-Paper-Scissors-Game/blob/main/demo/video2.gif" alt="Rock-Paper-Scissors-Game Demo" width="50%">
-### You can test the game yourself: [Click Here](https://david-mastalski.github.io/Memory-Games/)
+
+### You can test the game yourself: [Click Here](https://david-mastalski.github.io/Rock-Paper-Scissors-Game/)
