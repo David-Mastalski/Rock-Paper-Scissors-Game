@@ -12,6 +12,7 @@ Welcome to the rock-paper-scissors game! This is a simple game where your goal i
 - _**Paper defeats rock**_
 
 Choose one of the options and try to defeat the computer.
+Our game counts all your won battles and saves them in the browser's memory.
 
 ## How to start playing? 
 - _**Download code:**_
