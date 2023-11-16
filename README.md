@@ -5,6 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 Welcome to the rock-paper-scissors game! This is a simple game where your goal is to defeat the computer by choosing one of the three options: rock, paper, or scissors.
+The game was created using the provided files from Frontend Mentor.
 
 ## Rules of Memory Game
 - _**Rock defeats scissors**_
