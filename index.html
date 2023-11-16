@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app">
+    <header class="appHeader">
+      <h1 class="appHeader__title">
+        <span>rock</span>
+        <span>paper</span>
+        <span>scissors</span>
+      </h1>
+  
+      <div class="appHeader__score">
+        <span>score</span>
+        <strong class="all-points"></strong>
+      </div>
+    </header>
+    <main>
+      <section class="container-600">
+        <div class="option">
+
+          <button id="scissors" class="button button--scissors">
+            <div class="buttonImageContainer">
+              <img src="images/icon-scissors.svg" alt="scissors">
+            </div>
+          </button>
+    
+          <button id="paper" class="button button--paper">
+            <div class="buttonImageContainer">
+              <img src="images/icon-paper.svg" alt="paper">
+            </div>
+          </button>
+    
+          <button id="rock" class="button button--rock">
+            <div class="buttonImageContainer">
+              <img src="images/icon-rock.svg" alt="rock">
+            </div>
+          </button>
+
+        </div>
+      </section>
+
+      <section class="container-600 changeSize">
+        <div class="fight dn">
+          <div class="pick">
+            <span class="pick__title">your pick</span>
+            <div class="pick__btnContainer pick__btnContainer--myPick"></div>
+          </div>
+  
+          <div class="result">
+            <span class="result__info"></span>
+            <button class="playAgainBtn">play again</button>
+          </div>
+  
+          <div class="pick">
+            <span class="pick__title">the house picked</span>
+            <div class="pick__btnContainer pick__btnContainer--housePick">
+              <div class="housePickShadow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

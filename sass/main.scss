@@ -1,0 +1,252 @@
+@use './colors' as *;
+@use './scroll' as *;
+
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.app{
+    background: radial-gradient(hsl(214, 47%, 23%),hsl(237, 49%, 15%));
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px 7px;
+}
+
+.appHeader{
+    border: 2px solid $Header-Outline;
+    border-radius: 20px;
+    color: $font-color;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 12px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title{
+        font-size: 3rem;
+        span{
+            display: block;
+            line-height: 2.4rem;
+        }
+    }
+    &__score{
+        background-color: white;
+        border-radius: 8px;
+        color: $Score-Text;
+        padding: 12px 24px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.all-points{
+    color: $Dark-Text;
+    font-size: 4.8rem;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+.container-600{
+    max-width: 600px;
+    margin: 0 auto;
+    transition: max-width .5s;
+}
+
+.option{
+    aspect-ratio: 313/278;
+    background-image: url('../images/bg-triangle.svg');
+    background-size: cover;
+    background-position: center;
+    max-width: 50%;
+    margin: 160px auto;
+
+    position: relative;
+
+    .button{
+        width: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        &--paper{
+            left: 0;
+            top: 0;
+        }
+        &--rock{
+            left: 50%;
+            top: 100%;
+        }
+        &--scissors{
+            left: 100%;
+            top: 0;
+        }
+    }
+}
+
+.button{
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &--paper{
+        background-image: linear-gradient($Paper-Gradient);
+    }
+    &--rock{
+        background-image: linear-gradient($Rock-Gradient);  
+    }
+    &--scissors{
+        background-image: linear-gradient($Scissors-Gradient);
+    }
+}
+
+.button,
+.buttonImageContainer{
+    box-shadow: inset 0px -8px 0px rgba(0, 0, 0, 0.336);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonImageContainer{
+    background-color: white;
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    pointer-events: none;
+
+    img{
+        pointer-events: none;
+        width: 50%;
+    }
+}
+
+//--------------- Fight Section
+
+.changeSizeContainer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fight{
+    padding: 50px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.container-600.changeSizeContainer .fight{
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: auto;
+    grid-row-gap: 60px;
+}
+
+.container-600.changeSizeContainer .result{
+    display: flex;
+}
+
+.container-600.changeSizeContainer .pick > .pick__btnContainer > .button{
+    max-width: 120px;
+}
+
+.result{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__info{
+        display: block;
+        color: $font-color;
+        font-size: 3.2rem;
+        margin-bottom: 20px;
+    }
+}
+
+.playAgainBtn{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: $Score-Text;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+.pick{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &__title{
+        color: $font-color;
+        display: block;
+        font-size: 2.2rem;
+        text-align: center;
+        padding-bottom: 34px;
+        align-self: flex-start; 
+    }
+    &__btnContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+
+        .button{
+            width: 80%;
+            .buttonImageContainer img{
+                aspect-ratio: 49/59;
+                width: 45%; 
+            }
+        }
+    }
+}
+
+.housePickShadow{
+    aspect-ratio: 1/1;
+    background-color: rgba(0, 0, 0, 0.463);
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    width: 50%;  
+}
+
+.dn{
+    display: none;
+}
+
+@media screen and (min-width: 520px) {
+    .app{
+        padding: 40px 0 10px;
+    }
+    .container-600.changeSizeContainer .pick > .pick__btnContainer > .button{
+        max-width: 260px;
+    }
+    .container-600.changeSizeContainer .fight{
+        grid-template-columns: 1fr auto 1fr;
+    }
+    .playAgainBtn{
+        font-size: 2.2rem;
+    }
+    .result__info{
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app{
+        padding: 10px 7px;
+    }
+}
