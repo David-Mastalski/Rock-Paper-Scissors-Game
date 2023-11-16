@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors-Gam
+# Rock-Paper-Scissors-Game
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
@@ -7,6 +7,6 @@
 Welcome to the rock-paper-scissors game! This is a simple game where your goal is to defeat the computer by choosing one of the three options: rock, paper, or scissors.
 
 ## Rules of Memory Game
-- _**Rock defeats scissors**_
-- _**Scissors defeat paper**_
-- _**Paper defeats rock**_
+  -Rock defeats scissors
+  -Scissors defeat paper
+  -Paper defeats rock
